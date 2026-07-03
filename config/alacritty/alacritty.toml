@@ -1,0 +1,15 @@
+[general]
+import = [
+    "~/.config/alacritty/colors.toml"
+]
+
+[font.normal]
+family = "DepartureMono Nerd Font Mono"
+style = "Regular"
+
+[window]
+padding = { x = 10, y = 10 }
+
+[scrolling]
+history = 10000
+multiplier = 3
