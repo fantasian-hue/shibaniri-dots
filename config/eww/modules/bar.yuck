@@ -1,0 +1,22 @@
+(defwindow bar
+	:focusable "ondemand"
+	:monitor 1 :stacking "fg" :namespace "eww-bar" 
+	:geometry (geometry :y 5 :x 5)
+	(box
+	(bar))
+)
+
+(defwidget bar []
+    (centerbox :class {"barframe " + theme} :width 45 :orientation "v" :space-evenly "true" :height 1070 :halign "center"
+    	(box :class "info" :valign "start" :orientation "v"
+    	(clicker)
+    	(clock)
+    	(theme))
+    	
+    	(box :orientation "v" :valign "center"
+      	(player))
+      	
+    	(box :valign "end" :orientation "v"
+    	(workspaces))
+  ))
+	
