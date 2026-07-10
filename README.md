@@ -1,5 +1,7 @@
 # shibaniri-dots
 My Shiba dots
+Pacstall > Niri 
+
 
 # required downloads
 
@@ -45,10 +47,6 @@ sudo nano /etc/default/grub
 
 add nvidia-drm.modeset=1 to grub_cmdline_linux_default
 
-
-
-# My first downloads
-Pacstall > Niri > 
 
 # Notes
 plasma-browser-integration - then follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/)
