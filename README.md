@@ -27,10 +27,10 @@ Thunar > Mousepad > MPV > polkit-kde-agent-1 > gtklock > swayidle
 
 Eww bar - https://github.com/elkowar/eww - prerequisite installs "sudo apt install libgtk-3-dev libpango1.0-dev libdbusmenu-gtk3-dev libcairo2-dev libglib2.0-dev build-essential libc6-dev libgtk-layer-shell-dev"
 
-  The system library `gtk-layer-shell-0` required by crate `gtk-layer-shell-sys` was not found.
-  The file `gtk-layer-shell-0.pc` needs to be installed and the PKG_CONFIG_PATH environment variable must contain its parent directory.
-  The PKG_CONFIG_PATH environment variable is not set.
+Set eww as path:
+nano ~/.bashrc
 
-  HINT: if you have installed the library, try setting PKG_CONFIG_PATH to the directory containing `gtk-layer-shell-0.pc`.
+add to bottom
+export PATH="$PATH:~/eww/target/release"
 
 plasma-browser-integration - then follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/) + sudo apt install plasma-browser-integration
