@@ -16,6 +16,14 @@ Aseprite (compiled via docker) - https://www.reddit.com/r/aseprite/comments/ms1e
 
 NVIDIA GPU - https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
 
+Add to /etc/apt/sources.list/
+
+deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+deb http://security.debian.org/debian-security/ trixie-security contrib non-free main non-free-firmware
+deb http://deb.debian.org/debian/ trixie-updates non-free-firmware non-free contrib main
+
+then # apt install nvidia-kernel-dkms nvidia-driver and # apt install linux-headers-generic
+
 Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
 cargo install --path /home/quokka/xwayland-satellite
 
