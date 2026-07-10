@@ -1,0 +1,3 @@
+#!/bin/sh
+export QT_QPA_PLATFORM=wayland
+exec ~/Applications/krita-6.AppImage "$@"
