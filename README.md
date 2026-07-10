@@ -3,11 +3,7 @@ My Shiba dots
 
 # required downloads
 
-
-
-
-
---for widgets-- pamixer pulseaudio-utils ripgrep
+--for widgets-- pamixer pulseaudio-utils ripgrep playerctl
 
 input-remapper
 
@@ -24,6 +20,8 @@ deb http://deb.debian.org/debian/ trixie-updates non-free-firmware non-free cont
 
 then # apt install nvidia-kernel-dkms nvidia-driver and # apt install linux-headers-generic
 
+then, must add "options nvidia-drm modeset=1" to /etc/modeprobe.d/nvidia-kms.conf
+
 Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
 cargo install --path /home/quokka/xwayland-satellite
 
@@ -36,9 +34,6 @@ Thunar > Mousepad > MPV > polkit-kde-agent-1 > gtklock > swayidle
 Eww bar - https://github.com/elkowar/eww - prerequisite installs "sudo apt install libgtk-3-dev libpango1.0-dev libdbusmenu-gtk3-dev libcairo2-dev libglib2.0-dev build-essential libc6-dev libgtk-layer-shell-dev"
 
 Set eww as path:
-nano ~/.bashrc
-
-add to bottom
-export PATH="$PATH:~/eww/target/release"
+sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww
 
 plasma-browser-integration - then follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/) + sudo apt install plasma-browser-integration
