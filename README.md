@@ -8,9 +8,7 @@ Pacstall > Niri
 
 sudo apt install pamixer pulseaudio-utils ripgrep playerctl input-remapper plasma-browser-integration libxkbcommon-x11-dev libfuse2
 
-Alacritty > Swaybg > xdg-desktop-portal-gtk > gnome-keyring > mako-notifier > font-manager
-
-Thunar > Mousepad > MPV > polkit-kde-agent-1 > gtklock > swayidle
+sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-notifier font-manager thunar mousepad mpv polkit-kde-agent-1 gtklock swayidle
 
 Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
 cargo install --path /home/quokka/xwayland-satellite
