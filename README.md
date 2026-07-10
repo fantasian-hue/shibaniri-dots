@@ -50,3 +50,5 @@ add nvidia-drm.modeset=1 to grub_cmdline_linux_default
 
 # Notes
 plasma-browser-integration - then follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/)
+
+set up swayidle - https://niri-wm.github.io/niri/Example-systemd-Setup.html
