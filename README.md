@@ -22,3 +22,9 @@ NVIDIA GPU - https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
 
 Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
 cargo install --path /home/quokka/xwayland-satellite
+
+
+#My first downloads
+Pacstall > Niri > Alacritty > Swaybg > xdg-desktop-portal-gtk > gnome-keyring > mako-notifier
+
+Thunar > Mousepad > MPV > polkit-kde-agent-1
