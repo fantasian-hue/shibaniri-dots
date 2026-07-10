@@ -3,10 +3,6 @@ My Shiba dots
 
 # required downloads
 
-Eww bar - https://github.com/elkowar/eww - prerequisite installs "sudo apt install libgtk-3-dev libpango1.0-dev libdbusmenu-gtk3-dev libcairo2-dev libglib2.0-dev build-essential libc6-dev libgtk-layer-shell-dev"
-
-Set eww as path:
-sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww
 
 sudo apt install pamixer pulseaudio-utils ripgrep playerctl input-remapper plasma-browser-integration
 
@@ -19,8 +15,17 @@ cargo install --path /home/quokka/xwayland-satellite
 
 Aseprite (compiled via docker) - https://www.reddit.com/r/aseprite/comments/ms1ef4/easily_compile_aseprite_for_linux/ and https://github.com/nilsve/docker-aseprite-linux
 
+# EWW
+
+Eww bar - https://github.com/elkowar/eww
+
+sudo apt install libgtk-3-dev libpango1.0-dev libdbusmenu-gtk3-dev libcairo2-dev libglib2.0-dev build-essential libc6-dev libgtk-layer-shell-dev
+
+Set eww as path:
+sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww
+
 # NVIDIA GPU 
-- https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
+https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
 
 Add to /etc/apt/sources.list/
 
