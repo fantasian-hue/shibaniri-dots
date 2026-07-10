@@ -15,12 +15,20 @@ NVIDIA GPU - https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
 Add to /etc/apt/sources.list/
 
 deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+
 deb http://security.debian.org/debian-security/ trixie-security contrib non-free main non-free-firmware
+
 deb http://deb.debian.org/debian/ trixie-updates non-free-firmware non-free contrib main
 
 then # apt install nvidia-kernel-dkms nvidia-driver and # apt install linux-headers-generic
 
 then, must add "options nvidia-drm modeset=1" to /etc/modeprobe.d/nvidia-kms.conf
+
+then to show in gnome login manager
+
+sudo nano /etc/default/grub
+
+add nvidia-drm.modeset=1 to grub_cmdline_linux_default
 
 Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
 cargo install --path /home/quokka/xwayland-satellite
