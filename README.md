@@ -6,10 +6,13 @@ My Shiba dots
 --for widgets-- pamixer pulseaudio-utils ripgrep playerctl input-remapper plasma-browser-integration
 
 
+Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
+cargo install --path /home/quokka/xwayland-satellite
 
 Aseprite (compiled via docker) - https://www.reddit.com/r/aseprite/comments/ms1ef4/easily_compile_aseprite_for_linux/ and https://github.com/nilsve/docker-aseprite-linux
 
-NVIDIA GPU - https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
+# NVIDIA GPU 
+- https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
 
 Add to /etc/apt/sources.list/
 
@@ -29,8 +32,6 @@ sudo nano /etc/default/grub
 
 add nvidia-drm.modeset=1 to grub_cmdline_linux_default
 
-Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
-cargo install --path /home/quokka/xwayland-satellite
 
 
 # My first downloads
