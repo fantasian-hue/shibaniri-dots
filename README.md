@@ -6,7 +6,7 @@ plasma-browser-integration - then follow steps to change about:preferences in fi
 
 Eww bar - https://github.com/elkowar/eww - prerequisite installs "sudo apt install libgtk-3-dev libpango1.0-dev libdbusmenu-gtk3-dev libcairo2-dev libglib2.0-dev build-essential libc6-dev"
 
-swayidle swaybg swaylock
+swayidle swaybg gtklock
 
 --for widgets-- pamixer pulseaudio-utils ripgrep
 
@@ -22,5 +22,3 @@ NVIDIA GPU - https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
 
 Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
 cargo install --path /home/quokka/xwayland-satellite
-
-copyq
