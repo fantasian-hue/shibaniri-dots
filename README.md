@@ -6,7 +6,7 @@ Pacstall > Niri
 # required downloads
 
 
-sudo apt install pamixer pulseaudio-utils ripgrep playerctl input-remapper plasma-browser-integration
+sudo apt install pamixer pulseaudio-utils ripgrep playerctl input-remapper plasma-browser-integration libxkbcommon-x11-dev
 
 Alacritty > Swaybg > xdg-desktop-portal-gtk > gnome-keyring > mako-notifier > font-manager
 
