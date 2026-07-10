@@ -3,8 +3,16 @@ My Shiba dots
 
 # required downloads
 
---for widgets-- pamixer pulseaudio-utils ripgrep playerctl input-remapper plasma-browser-integration
+Eww bar - https://github.com/elkowar/eww - prerequisite installs "sudo apt install libgtk-3-dev libpango1.0-dev libdbusmenu-gtk3-dev libcairo2-dev libglib2.0-dev build-essential libc6-dev libgtk-layer-shell-dev"
 
+Set eww as path:
+sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww
+
+sudo apt install pamixer pulseaudio-utils ripgrep playerctl input-remapper plasma-browser-integration
+
+Alacritty > Swaybg > xdg-desktop-portal-gtk > gnome-keyring > mako-notifier > font-manager
+
+Thunar > Mousepad > MPV > polkit-kde-agent-1 > gtklock > swayidle
 
 Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
 cargo install --path /home/quokka/xwayland-satellite
@@ -35,13 +43,7 @@ add nvidia-drm.modeset=1 to grub_cmdline_linux_default
 
 
 # My first downloads
-Pacstall > Niri > Alacritty > Swaybg > xdg-desktop-portal-gtk > gnome-keyring > mako-notifier > font-manager
+Pacstall > Niri > 
 
-Thunar > Mousepad > MPV > polkit-kde-agent-1 > gtklock > swayidle
-
-Eww bar - https://github.com/elkowar/eww - prerequisite installs "sudo apt install libgtk-3-dev libpango1.0-dev libdbusmenu-gtk3-dev libcairo2-dev libglib2.0-dev build-essential libc6-dev libgtk-layer-shell-dev"
-
-Set eww as path:
-sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww
-
-plasma-browser-integration - then follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/) + sudo apt install plasma-browser-integration
+# Notes
+plasma-browser-integration - then follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/)
