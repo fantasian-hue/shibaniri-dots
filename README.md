@@ -3,9 +3,8 @@ My Shiba dots
 
 # required downloads
 
---for widgets-- pamixer pulseaudio-utils ripgrep playerctl
+--for widgets-- pamixer pulseaudio-utils ripgrep playerctl input-remapper plasma-browser-integration
 
-input-remapper
 
 
 Aseprite (compiled via docker) - https://www.reddit.com/r/aseprite/comments/ms1ef4/easily_compile_aseprite_for_linux/ and https://github.com/nilsve/docker-aseprite-linux
