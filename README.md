@@ -23,3 +23,4 @@ NVIDIA GPU - https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
 Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
 cargo install --path /home/quokka/xwayland-satellite
 
+copyq
