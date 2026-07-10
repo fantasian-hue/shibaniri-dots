@@ -27,7 +27,7 @@ cargo install --path /home/quokka/xwayland-satellite
 
 
 # My first downloads
-Pacstall > Niri > Alacritty > Swaybg > xdg-desktop-portal-gtk > gnome-keyring > mako-notifier
+Pacstall > Niri > Alacritty > Swaybg > xdg-desktop-portal-gtk > gnome-keyring > mako-notifier > font-manager
 
 Thunar > Mousepad > MPV > polkit-kde-agent-1 > gtklock > swayidle
 
