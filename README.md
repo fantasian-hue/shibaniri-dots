@@ -58,3 +58,8 @@ Easy steps:
 plasma-browser-integration - follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/)
 
 set up swayidle on startup - https://niri-wm.github.io/niri/Example-systemd-Setup.html
+
+# symlinking
+If we want to run an app easily from terminal:
+
+sudo ln -s ~/aseprite-builder/aseprite/build/bin/aseprite /usr/local/bin (aseprite as an example)
