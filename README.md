@@ -21,9 +21,6 @@ Eww bar - https://github.com/elkowar/eww
 
 sudo apt install libgtk-3-dev libpango1.0-dev libdbusmenu-gtk3-dev libcairo2-dev libglib2.0-dev build-essential libc6-dev libgtk-layer-shell-dev
 
-Set eww as path:
-sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww
-
 # NVIDIA GPU 
 https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
 
@@ -63,3 +60,5 @@ set up swayidle on startup - https://niri-wm.github.io/niri/Example-systemd-Setu
 If we want to run an app easily from terminal:
 
 sudo ln -s ~/aseprite-builder/aseprite/build/bin/aseprite /usr/local/bin (aseprite as an example)
+
+sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww (eww as an example)
