@@ -22,19 +22,13 @@ Eww bar - https://github.com/elkowar/eww
 sudo apt install libgtk-3-dev libpango1.0-dev libdbusmenu-gtk3-dev libcairo2-dev libglib2.0-dev build-essential libc6-dev libgtk-layer-shell-dev
 
 # NVIDIA GPU 
-https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
-
-Add to /etc/apt/sources.list/
-
-deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
-
-deb http://security.debian.org/debian-security/ trixie-security contrib non-free main non-free-firmware
-
-deb http://deb.debian.org/debian/ trixie-updates non-free-firmware non-free contrib main
-
-then # apt install nvidia-kernel-dkms nvidia-driver and # apt install linux-headers-generic
-
-then, must add "options nvidia-drm modeset=1" to /etc/modeprobe.d/nvidia-kms.conf
+1. https://wiki.debian.org/NvidiaGraphicsDrivers#GPU_identification
+2. Add to /etc/apt/sources.list/
+3. deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+4. deb http://security.debian.org/debian-security/ trixie-security contrib non-free main non-free-firmware
+5. deb http://deb.debian.org/debian/ trixie-updates non-free-firmware non-free contrib main
+6. then # apt install nvidia-kernel-dkms nvidia-driver and # apt install linux-headers-generic
+7. then, must add "options nvidia-drm modeset=1" to /etc/modeprobe.d/nvidia-kms.conf
 
 then to show in gnome login manager
 
