@@ -10,8 +10,9 @@ sudo apt install pamixer pulseaudio-utils ripgrep playerctl input-remapper plasm
 
 sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-notifier font-manager thunar mousepad mpv polkit-kde-agent-1 gtklock swayidle
 
-Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
-cargo install --path /home/quokka/xwayland-satellite
+# Xwayland satellite 
+1. git clone https://github.com/Supreeeme/xwayland-satellite
+2. cargo build
 
 
 
