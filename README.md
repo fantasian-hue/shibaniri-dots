@@ -54,6 +54,10 @@ plasma-browser-integration - follow steps to change about:preferences in firefox
 
 set up swayidle on startup - https://niri-wm.github.io/niri/Example-systemd-Setup.html
 
+Mousepad - add yuck styling. sudo nano /usr/share/gtksourceview-4/language-specs/commonlisp.lang
+
+Add *.yuck to "globs"
+
 # symlinking
 If we want to run an app easily from terminal:
 
