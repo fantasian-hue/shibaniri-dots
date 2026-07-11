@@ -13,7 +13,7 @@ sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-noti
 Xwayland satellite cargo https://github.com/Supreeeme/xwayland-satellite
 cargo install --path /home/quokka/xwayland-satellite
 
-Aseprite (compiled via docker) - https://www.reddit.com/r/aseprite/comments/ms1ef4/easily_compile_aseprite_for_linux/ and https://github.com/nilsve/docker-aseprite-linux
+
 
 # EWW
 
@@ -45,8 +45,16 @@ sudo nano /etc/default/grub
 
 add nvidia-drm.modeset=1 to grub_cmdline_linux_default
 
+# Aseprite
+Aseprite - https://github.com/aseprite/aseprite/blob/main/INSTALL.md
+
+Easy steps:
+
+1. Clone Git to a folder in $HOME.
+2. Download the skia dependency, copy it to ~/aseprite-build/aseprite/.deps (create .deps folder)
+3. Run build.sh from terminal (e.g. ~/aseprite-build/aseprite/build.sh)
 
 # Notes
-plasma-browser-integration - then follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/)
+plasma-browser-integration - follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/)
 
-set up swayidle - https://niri-wm.github.io/niri/Example-systemd-Setup.html
+set up swayidle on startup - https://niri-wm.github.io/niri/Example-systemd-Setup.html
