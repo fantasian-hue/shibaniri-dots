@@ -13,6 +13,7 @@ sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-noti
 # Xwayland satellite 
 1. git clone https://github.com/Supreeeme/xwayland-satellite
 2. cargo build
+3. then, create a symlink to /usr/local/bin from ~/FOLDER_XWAYLAND_WAS_CLONED_TO/xwayland-satellite/target/debug/xwayland-satellite
 
 
 
