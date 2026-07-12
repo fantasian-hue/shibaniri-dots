@@ -52,20 +52,12 @@ Easy steps:
 3. Run build.sh from terminal (e.g. ~/aseprite-build/aseprite/build.sh)
 
 # Cava
-Have to install cava by source to get ncurses support for vertical bars:
+
+Don't need
 
 sudo apt install build-essential automake libtool git libfftw3-dev libncursesw5-dev libasound2-dev libpulse-dev
 
 sudo apt install build-essential libfftw3-dev libasound2-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev libpipewire-0.3-dev libjack-jackd2-dev pkgconf
-
-Then:
-1. git clone https://github.com/karlstav/cava
-2. cd cava
-3. ./autogen.sh
-4. ./configure
-5. make
-
-Then symlink
 
 # Notes
 plasma-browser-integration - follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/)
