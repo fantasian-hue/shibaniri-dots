@@ -14,6 +14,8 @@ sudo apt install build-essential automake libtool git libfftw3-dev libncursesw5-
 
 sudo apt install cava fastfetch
 
+sudo apt install build-essential libfftw3-dev libasound2-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev libpipewire-0.3-dev libjack-jackd2-dev pkgconf
+
 # Xwayland satellite 
 1. git clone https://github.com/Supreeeme/xwayland-satellite
 2. cargo build
