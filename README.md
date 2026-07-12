@@ -10,7 +10,7 @@ sudo apt install pamixer pulseaudio-utils ripgrep playerctl input-remapper plasm
 
 sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-notifier font-manager thunar mousepad mpv polkit-kde-agent-1 gtklock swayidle
 
-sudo apt-get install build-essential automake libtool git libfftw3-dev libncursesw5-dev libasound2-dev libpulse-dev
+sudo apt install build-essential automake libtool git libfftw3-dev libncursesw5-dev libasound2-dev libpulse-dev
 
 sudo apt install cava fastfetch
 
