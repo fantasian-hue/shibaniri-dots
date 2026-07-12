@@ -51,6 +51,21 @@ Easy steps:
 2. Download the skia dependency, copy it to ~/aseprite-build/aseprite/.deps (create .deps folder)
 3. Run build.sh from terminal (e.g. ~/aseprite-build/aseprite/build.sh)
 
+# Cava
+Have to install cava by source:
+
+sudo apt install build-essential automake libtool git libfftw3-dev libncursesw5-dev libasound2-dev libpulse-dev
+
+sudo apt install build-essential libfftw3-dev libasound2-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev libpipewire-0.3-dev libjack-jackd2-dev pkgconf
+
+Then:
+1. git clone https://github.com/karlstav/cava
+2. cd cava
+3. ./autogen.sh
+4. ./configure
+5. make
+
+
 # Notes
 plasma-browser-integration - follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/)
 
@@ -59,6 +74,8 @@ set up swayidle on startup - https://niri-wm.github.io/niri/Example-systemd-Setu
 Mousepad - add yuck styling. sudo nano /usr/share/gtksourceview-4/language-specs/commonlisp.lang
 
 Add *.yuck to "globs"
+
+
 
 # symlinking
 If we want to run an app easily from terminal:
