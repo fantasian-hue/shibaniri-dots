@@ -1,9 +1,0 @@
-(defwidget theme []
-  (eventbox :cursor "pointer":onclick "~/.config/eww/scripts/themeswitch.sh"
-	(image :valign "start" :image-width 32 :class {"theme-ball " + theme}
-		:path {theme == "light"
-			? "/home/quokka/.config/eww/assets/ball.png"
-			: "/home/quokka/.config/eww/assets/ball2.png"}
-    )
-  )
-)
