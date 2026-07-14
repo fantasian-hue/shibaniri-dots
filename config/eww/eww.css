@@ -1,0 +1,182 @@
+* {
+	all: unset;
+	font-family:DepartureMono Nerd Font Mono;
+}
+
+.border{
+	border: 5px black solid;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+/******************** Main bar ***********************/
+
+.paint{
+	border-radius: 0px 10px 10px 0px;
+	padding-left:10px;
+	background-color:#ffd48e;
+}
+
+.paint.dark{
+	background-color:grey;
+}
+
+.barframe, .barframe-border{
+	border-radius:10px;
+}
+
+.barframe.dark {
+	background-color:#625a54;
+	border: 3px solid black;
+}
+
+.barframe.light {
+	background-color:rgba(255,192,103,1.0);
+	border: 3px solid #aa8450;
+	color:black;
+}
+
+.barframe-border.dark {
+	background-color:#625a54;
+	border: 3px solid #86684b;
+}
+
+.barframe-border.light {
+	background-color:rgba(255,192,103,1.0);
+	border: 3px solid #BE5103;
+	color:black;
+}
+
+.info{
+	padding-top:10px;
+}
+
+/******************** Control centre ***********************/
+
+.controlcentre{
+	border-radius:10px;
+	border: 3px solid #BE5103;
+	background-color:rgba(255,192,103,1);
+	color:black;
+}
+
+.controlcentre.dark{
+	border: 3px solid #86684b;
+	background-color:rgba(98, 90, 84,1);
+	color:white;
+}
+
+.date {
+	padding-right:10px;
+}
+
+.temperature{
+	padding-bottom:20px;
+}
+
+/******************** Volume ***********************/
+
+.metric slider {
+	color: #ffd5cd;
+}
+
+.metric scale trough highlight {
+  background-color: #862801;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.metric scale trough {
+	border:2px black solid;
+  background-color: #4e4e4e;
+  border-radius: 10px;
+  min-height: 18px;
+  min-width: 250px;
+}
+
+.volume{
+	padding-top:20px;
+	padding-bottom:30px;
+}
+
+/******************** Theme switcher ***********************/
+
+.theme-ball {
+	padding:10px;
+}
+
+/******************** Clock ***********************/
+
+.clock {
+	font-weight:bold;
+	padding-top:10px;
+}
+
+.clock-minute {
+	margin-top:-10px;
+}
+
+
+/******************** Player ***********************/
+
+.player-frame{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.player-artist{
+	font-weight:bold;
+}
+
+.player-title{
+}
+
+.player-text{
+	font-size:13px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.albumart {
+    margin-left:1px;
+    margin-bottom:-0px;
+}
+
+.playpause{
+    padding:10px 0px 10px 0px;
+}
+
+
+/******************** Workspace ***********************/
+
+.desktop-frame {
+    min-width:36px;
+    padding-bottom:10px;
+}
+
+.desktop-btn{
+    padding:5px 0px 5px 0px;
+}
+
+
+
+
+/******************** Visualizer ***********************/
+
+.visualizer-container{
+	margin-right:-3px;
+}
+
+.cava-visualizer {
+  font-family: DepartureMono Nerd Font Mono;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: rgba(255, 125, 37, 0.5);
+  
+}
+
+.cava-visualizer.dark{
+	color: rgba(30, 15, 1, 0.3);
+}
