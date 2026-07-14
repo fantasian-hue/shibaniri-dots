@@ -1,0 +1,22 @@
+(deflisten theme :initial "light" 'tail -F ~/.config/eww/scripts/theme-state')
+(deflisten music :initial "melo" "scripts/player.sh")
+(deflisten workspace :initial "null" "scripts/workspace.sh")
+(deflisten volume :initial "0" "scripts/volume.sh")
+(defpoll temperature :interval "1s" "scripts/temperature.sh")
+(deflisten cava :initial "" "scripts/cava.sh")
+(deflisten focused :initial "null" "scripts/focused.sh")
+
+; OPEN BUTTON VARS
+(defvar open_control false)
+(defvar open_powermenu false)
+
+(include "modules/bar.yuck")
+(include "modules/control-button.yuck")
+(include "modules/clock.yuck")
+(include "modules/theme.yuck")
+(include "modules/player.yuck")
+(include "modules/workspace.yuck")
+(include "modules/control-centre.yuck")
+(include "modules/powermenu.yuck")
+(include "modules/volume.yuck")
+(include "modules/killer.yuck")
