@@ -1,0 +1,41 @@
+(defwidget player []
+	(box :class {"player-frame " + theme} :halign "center" :orientation "v" :width 36 :space-evenly false
+		(image :path "./assets/shibagif.gif")
+		(box :class "player" :width 40 :halign "center" :orientation "v" :space-evenly false
+			(overlay
+				(box :class "visualizer-container"
+    				(label :angle 90 :height 300 :class {"cava-visualizer " + theme} :text cava))
+    			(box :height 300 :class "player-text"
+    				(label :class "player-artist" :text {music.artist == "" ? "meep" : music.artist} :angle 90 :limit-width 25)
+    				(label :class "player-title" :text {music.title == "" ? "meeeep" : music.title } :angle 90 :limit-width 25)
+    		))
+        	(box :orientation "vertical" :space-evenly false
+        		(box :class "prevnext"
+        			(eventbox :onclick "playerctl -p plasma-browser-integration previous" :cursor "pointer"
+        				(image :path {theme == "light" 
+        					? "./assets/shiba-prev.png"
+        					: "./assets/shibad-prev.png"}
+        					:image-width 18 :image-height 18))
+        	)
+        	(box :class "playpause"
+        		(eventbox :onclick "playerctl -p plasma-browser-integration play-pause" :cursor "pointer"
+        			(image :path {theme == "light"
+        				? (music.status == "Playing"
+        					? "./assets/shiba-pause.png"
+        					: "./assets/shiba-play.png")
+        				: (music.status == "Playing"
+        					? "./assets/shibad-pause.png"
+        					: "./assets/shibad-play.png")}
+        				:image-width 18 :image-height 18))
+        	)
+        	(box :class "prevnext"
+        		(eventbox :onclick "playerctl -p plasma-browser-integration next" :cursor "pointer"
+        			(image :path {theme == "light"
+        				? "./assets/shiba-next.png"
+        				: "./assets/shibad-next.png"}
+        			:image-width 18 :image-height 18)))
+        	)
+        )
+    )
+)
+

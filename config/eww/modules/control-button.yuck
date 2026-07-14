@@ -1,0 +1,9 @@
+(defwidget control-button[]
+(eventbox
+	:cursor "pointer"
+	:onclick {open_control == "false" 
+	? "eww update open_control=true && sleep 0.02 && eww update open_control=true &"
+	: "eww update open_control=false"}
+	(image
+	:path "/home/quokka/.config/eww/assets/shibapc.png"))
+)

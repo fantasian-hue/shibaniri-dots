@@ -1,0 +1,24 @@
+(defwindow control-centre
+	:monitor 1 :stacking "ov" :focusable "ondemand" :geometry (geometry :x "65" :y "10") :namespace "eww-centre"
+    (revealer :transition "slideright" :reveal {open_control} :duration "300ms"
+    		(centerbox :height 140 :width 400 :class {"controlcentre " + theme} :orientation "v"
+    			(box :valign "start"
+    			(box :halign "start"
+    				(theme )
+    				)
+    				(box :halign "center"
+    				(label :text ""))
+    				(box :halign "end"
+    				(label :class "date" :text {formattime(EWW_TIME, "%a, %b %d")})
+    				))
+    			(box :valign "center" :space-evenly false :orientation "v"
+    				(box
+    					(volume))
+    				(box :class "temperature"
+    					(label :class "bold" :text "CPU Temp")
+    					(label :text "${temperature}"))
+    				)
+    				(box :valign "end" :halign "end"
+    					(powermenu-button)))
+    )
+)

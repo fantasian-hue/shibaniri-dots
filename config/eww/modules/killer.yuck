@@ -1,0 +1,17 @@
+(defwindow menu-killer
+	:monitor 0
+	:stacking "bg"
+	:geometry (geometry :width "100%" :height "100%")
+	(killer)
+)
+
+(defwindow menu-killer2
+	:monitor 1
+	:stacking "bg"
+	:geometry (geometry :width "100%" :height "100%")
+	(killer)
+)
+
+(defwidget killer[]
+	(eventbox :onclick {"eww update open_control=false && eww update open_powermenu=false"})
+)

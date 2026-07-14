@@ -1,0 +1,46 @@
+(defwidget workspaces []
+  (box
+    :class "desktop-frame"
+    :orientation "vertical"
+    :halign "center"
+    :space-evenly false
+    :width 40
+
+(box
+:class "desktop-btn"
+(eventbox
+  :cursor "pointer"
+  :onclick "niri msg action focus-workspace 'monitor-1'"
+  (image
+    :path {workspace == "monitor-1" ? "./assets/shiba-square1.png" : "./assets/shiba-square-non2.png"}
+    :image-width 28)))
+    
+    (box
+    :class "desktop-btn"
+    (eventbox
+  :cursor "pointer"
+  :onclick "niri msg action focus-workspace 'monitor-2'"
+  (image
+    :path {workspace == "monitor-2" ? "./assets/shiba-square2.png" : "./assets/shiba-square-non2.png"}
+    :image-width 28)))
+    
+    (box
+    :class "desktop-btn"
+    (eventbox
+  :cursor "pointer"
+  :onclick "niri msg action focus-workspace 'monitor-3'"
+  (image
+    :path {workspace == "monitor-3" ? "./assets/shiba-square3.png" : "./assets/shiba-square-non2.png"}
+    :image-width 28)))
+    
+    (box
+    :class "desktop-btn"
+    (eventbox
+  :cursor "pointer"
+  :onclick "niri msg action focus-workspace 'monitor-4'"
+  (image
+    :path {workspace == "monitor-4" ? "./assets/shiba-square4.png" : "./assets/shiba-square-non2.png"}
+    :image-width 28)))
+  )
+)
+

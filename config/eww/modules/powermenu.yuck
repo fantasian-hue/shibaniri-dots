@@ -1,0 +1,24 @@
+(defwindow powermenu
+	:monitor 1 :stacking "ov" :focusable "ondemand" :geometry (geometry :x "470" :y "175")
+		(revealer :transition "slideright" :reveal {open_powermenu} :duration "100ms"
+			(box :height 40 :width 200 :class {"controlcentre " + theme}
+				(eventbox :onclick "systemctl poweroff" :cursor "pointer"
+					(image :path "/home/quokka/.config/eww/assets/shutdown.png")
+				)
+				(eventbox :onclick "systemctl reboot" :cursor "pointer"
+					(image :path "/home/quokka/.config/eww/assets/restart.png")
+				)
+				(eventbox :onclick "sleep 0.1 && gtklock -M DP-4 &" :cursor "pointer"
+					(image :path "/home/quokka/.config/eww/assets/logout.png")
+				)
+	))
+)
+
+(defwidget powermenu-button[]
+	(eventbox 
+	:onclick {open_powermenu == false 
+	? "eww update open_powermenu=true &"
+	: "eww update open_powermenu=false &"}
+	(image :path "/home/quokka/.config/eww/assets/close.png")
+	)
+)
