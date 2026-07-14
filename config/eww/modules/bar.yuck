@@ -1,0 +1,24 @@
+(defwindow bar
+	:focusable "ondemand"
+	:monitor 1 :stacking "fg" :namespace "eww-bar" 
+	:geometry (geometry :y 10 :x 0)
+	(overlay
+	(eventbox :width 55 :height 1060 :class {"paint " + theme} :onclick "eww update open_control=false && eww update open_powermenu=false"
+	(box :halign "end"
+		(dock))))
+)
+
+(defwidget dock []
+    (centerbox :class {focused=="null" ? ("barframe-border " + theme) : ("barframe " + theme)}:width 45 :orientation "v" :space-evenly "true" :height 1060 :halign "center"
+    	(box :valign "start" :orientation "v" :space-evenly "false" :class "info"
+    		(control-button)
+    		(clock)
+    	)
+    	(box :orientation "v" :valign "center"
+      		(player)
+      		)
+    	(box :valign "end" :orientation "v"
+    		(workspaces)
+    		)
+	)
+)
