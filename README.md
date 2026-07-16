@@ -40,8 +40,8 @@ then, to enable wakeup from sleep:
 1. sudo systemctl enable nvidia-suspend.service && sudo systemctl enable nvidia-hibernate.service && sudo systemctl enable nvidia-resume.service
 2. sudo nano /etc/modprobe.d/nvidia-power-management.conf
 3. Add "options nvidia NVreg_PreserveVideoMemoryAllocations=1", then save and exit
+4. sudo update-initramfs -u
 
-then to show in gnome login manager
 
 # Aseprite
 Aseprite - https://github.com/aseprite/aseprite/blob/main/INSTALL.md
