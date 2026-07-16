@@ -35,12 +35,13 @@ sudo apt install libgtk-3-dev libpango1.0-dev libdbusmenu-gtk3-dev libcairo2-dev
 5. deb http://deb.debian.org/debian/ trixie-updates non-free-firmware non-free contrib main
 6. then # apt install nvidia-kernel-dkms nvidia-driver and # apt install linux-headers-generic
 7. then, must add "options nvidia-drm modeset=1" to /etc/modeprobe.d/nvidia-kms.conf
+   
+then, to enable wakeup from sleep:
+1. sudo systemctl enable nvidia-suspend.service && sudo systemctl enable nvidia-hibernate.service && sudo systemctl enable nvidia-resume.service
+2. sudo nano /etc/modprobe.d/nvidia-power-management.conf
+3. Add "options nvidia NVreg_PreserveVideoMemoryAllocations=1", then save and exit
 
 then to show in gnome login manager
-
-sudo nano /etc/default/grub
-
-add nvidia-drm.modeset=1 to grub_cmdline_linux_default
 
 # Aseprite
 Aseprite - https://github.com/aseprite/aseprite/blob/main/INSTALL.md
