@@ -5,7 +5,6 @@ Pacstall > Niri
 
 # required downloads
 
-
 sudo apt install pamixer pulseaudio-utils ripgrep playerctl input-remapper plasma-browser-integration libxkbcommon-x11-dev libfuse2 libxcb-util-dev libxcb-cursor-dev libnotify-bin lm-sensors
 
 sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-notifier font-manager thunar mousepad mpv polkit-kde-agent-1 gtklock swayidle
@@ -77,3 +76,8 @@ If we want to run an app easily from terminal:
 sudo ln -s ~/aseprite-builder/aseprite/build/bin/aseprite /usr/local/bin (aseprite as an example)
 
 sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww (eww as an example)
+
+# set thunar as default file explorer
+xdg-mime default thunar.desktop inode/directory
+
+# I also installed xdg-desktop-portal-gnome, don't know if i need
