@@ -41,6 +41,13 @@ then, to enable wakeup from sleep:
 3. Add "options nvidia NVreg_PreserveVideoMemoryAllocations=1", then save and exit
 4. sudo update-initramfs -u
 
+# sysstat
+1. Must install sysstat from source, we need the newest version to use -o JSON
+2. Download sysstat from https://github.com/sysstat/sysstat, paste it to ~/sysstat
+3. cd sysstat
+4. ./configure
+5. make
+6. sudo make install
 
 # Aseprite
 Aseprite - https://github.com/aseprite/aseprite/blob/main/INSTALL.md
