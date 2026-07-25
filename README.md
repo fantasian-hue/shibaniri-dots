@@ -75,6 +75,8 @@ Mousepad - add yuck styling. sudo nano /usr/share/gtksourceview-4/language-specs
 
 Add *.yuck to "globs"
 
+to make sure firefox deb adheres to system colors: gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+
 
 
 # symlinking
