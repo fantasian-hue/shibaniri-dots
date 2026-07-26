@@ -86,6 +86,8 @@ sudo ln -s ~/aseprite-builder/aseprite/build/bin/aseprite /usr/local/bin (asepri
 
 sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww (eww as an example)
 
+firefox theming - toolkit.legacyUserProfileCustomizations.stylesheets
+
 # set thunar as default file explorer
 xdg-mime default thunar.desktop inode/directory
 
