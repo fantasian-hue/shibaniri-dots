@@ -11,6 +11,8 @@ sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-noti
 
 sudo apt install fastfetch cava feh
 
+sudo dpkg --add-architecture i386
+
 sudo apt install build-essential libfftw3-dev libasound2-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev libpipewire-0.3-dev libjack-jackd2-dev pkgconf
 
 # Xwayland satellite 
