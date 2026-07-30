@@ -7,7 +7,7 @@ Pacstall > Niri
 
 sudo apt install pamixer pulseaudio-utils ripgrep playerctl input-remapper plasma-browser-integration libxkbcommon-x11-dev libfuse2 libxcb-util-dev libxcb-cursor-dev libnotify-bin lm-sensors socat
 
-sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-notifier font-manager thunar mousepad mpv polkit-kde-agent-1 gtklock swayidle
+sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-notifier font-manager thunar mousepad mpv polkit-kde-agent-1 gtklock swayidle xdg-desktop-portal-gnome
 
 sudo apt install fastfetch cava feh
 
@@ -96,5 +96,3 @@ sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww (eww as an example)
 
 # set thunar as default file explorer
 xdg-mime default thunar.desktop inode/directory
-
-# I also installed xdg-desktop-portal-gnome, don't know if i need
