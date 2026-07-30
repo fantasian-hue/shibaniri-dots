@@ -1,0 +1,19 @@
+#nav-bar {
+	border-top:none !important;
+}
+
+/*:root, 
+#main-window, 
+#navigator-toolbox, 
+#browser, 
+#appcontent, 
+tabpanels {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+:root {
+    --tabpanel-background-color: transparent !important;
+    --toolbox-bgcolor: transparent !important;
+}
+*/
