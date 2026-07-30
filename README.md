@@ -11,9 +11,7 @@ sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-noti
 
 sudo apt install fastfetch cava feh
 
-sudo dpkg --add-architecture i386
 
-sudo apt install nvidia-driver-libs:i386
 
 sudo apt install build-essential libfftw3-dev libasound2-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev libpipewire-0.3-dev libjack-jackd2-dev pkgconf
 
@@ -81,7 +79,10 @@ Add *.yuck to "globs"
 
 to make sure firefox deb adheres to system colors: gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 
+# steam
+sudo dpkg --add-architecture i386
 
+sudo apt install nvidia-driver-libs:i386 
 
 # symlinking
 If we want to run an app easily from terminal:
