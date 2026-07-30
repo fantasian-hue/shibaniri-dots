@@ -5,7 +5,10 @@
   "description": "Live-injects colors.css into every open tab and future tabs, no reload required.",
   "browser_specific_settings": {
     "gecko": {
-      "id": "theme-sync@local.script"
+      "id": "theme-sync@local.script",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "permissions": ["nativeMessaging", "tabs", "scripting", "alarms"],
