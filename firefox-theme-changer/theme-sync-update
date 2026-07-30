@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Tells the Theme Sync native host to read colors.css and push it to
+# Firefox for live injection into every tab.
+#
+# Usage:
+#   theme-sync-update                      # uses DEFAULT_COLORS_PATH in the host script
+#   theme-sync-update /path/to/colors.css  # uses this path instead
+#
+# Add this as the last line of your themeswitch.sh.
+
+SOCK=/tmp/theme-sync.sock
+
+if [ ! -S "$SOCK" ]; then
+    echo "theme-sync-update: no socket at $SOCK (is Firefox running with the extension loaded?)" >&2
+    exit 1
+fi
+
+if [ -n "$1" ]; then
+    MSG="update:$1"
+else
+    MSG="update"
+fi
+
+if command -v socat >/dev/null 2>&1; then
+    echo -n "$MSG" | socat - "UNIX-CONNECT:$SOCK"
+elif command -v ncat >/dev/null 2>&1; then
+    echo -n "$MSG" | ncat -U "$SOCK"
+else
+    echo "theme-sync-update: needs 'socat' or 'ncat' installed" >&2
+    exit 1
+fi
