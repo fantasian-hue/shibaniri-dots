@@ -107,3 +107,8 @@ xdg-mime default thunar.desktop inode/directory
 # awww
 
 # zed
+1. Download Zed
+2. We're using pywal colours for zed theming: https://github.com/0lswitcher/pywal-zed-theme/tree/main
+3. git clone https://github.com/Fuwn/zed-theme-wal.git ~/.config/zed/wal
+4. download pywal-to-zed.sh and move it to ~/.config/zed/wal
+5. chmod +x ~/.config/zed/wal/pywal-to-zed.sh
