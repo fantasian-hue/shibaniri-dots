@@ -96,3 +96,14 @@ sudo ln -sf ~/eww/target/release/eww /usr/local/bin/eww (eww as an example)
 
 # set thunar as default file explorer
 xdg-mime default thunar.desktop inode/directory
+
+# pywalfox
+1. sudo apt install pipx
+2. pipx install pywalfox
+3. pywalfox install
+4. install the extension
+5. create a colors.json in ~/cache/wal
+
+# awww
+
+# zed
