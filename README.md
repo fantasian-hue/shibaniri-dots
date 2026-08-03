@@ -73,8 +73,6 @@ plasma-browser-integration - follow steps to change about:preferences in firefox
 
 set up swayidle on startup - https://niri-wm.github.io/niri/Example-systemd-Setup.html
 
-Mousepad - add yuck styling. sudo nano /usr/share/gtksourceview-4/language-specs/commonlisp.lang
-
 Add *.yuck to "globs"
 
 to make sure firefox deb adheres to system colors: gsettings set org.gnome.desktop.interface color-scheme prefer-dark
