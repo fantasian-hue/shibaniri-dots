@@ -1,0 +1,13 @@
+[Shortcuts]
+KisToolSelectPolygonal=M
+KisToolSelectRectangular=;\s
+KritaFill/KisToolFill=G
+KritaFill/KisToolGradient=;\s
+add_new_paint_layer=Ctrl+Shift+N
+edit_redo=Y
+edit_undo=Z
+mirrorAllNodesX=W
+mirror_canvas=;\s
+new_from_visible=;\s
+paste_new=;\s
+show_common_colors=none
