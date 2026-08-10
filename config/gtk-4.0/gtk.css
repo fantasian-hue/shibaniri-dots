@@ -1,0 +1,24 @@
+@import url("colors.css");
+
+* {
+	font-family:DepartureMono Nerd Font Mono;
+}
+
+window {
+    background-color:@bg-color;
+}
+
+gridview, scrolledwindow, columnview {
+	background-color:@bg-color;
+	color:@fg-color;
+}
+
+list, viewport {
+    background-color:@bright-accent;
+    color:@fg-color;
+}
+
+headerbar, multi-layout-view, paned {
+    background-color:@accent-color;
+    color:@fg-accent;
+}
