@@ -114,7 +114,8 @@ xdg-mime default thunar.desktop inode/directory
 # update
 1. .config/alacritty
 2. .config/eww
-3. .config/niri
+3. .config/gtk-4.0
 4. .config/mozilla
-5. .config/zed
-6. .themes/pudding && .themes/seasalt
+5. .config/niri
+6. .config/zed
+7. .themes/pudding && .themes/seasalt
