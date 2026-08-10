@@ -117,3 +117,4 @@ xdg-mime default thunar.desktop inode/directory
 3. .config/niri
 4. .config/mozilla
 5. .config/zed
+6. .themes/pudding && .themes/seasalt
