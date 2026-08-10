@@ -59,20 +59,10 @@ Easy steps:
 2. Download the skia dependency, copy it to ~/aseprite-build/aseprite/.deps (create .deps folder)
 3. Run build.sh from terminal (e.g. ~/aseprite-build/aseprite/build.sh)
 
-# Cava
-
-Don't need
-
-sudo apt install build-essential automake libtool git libfftw3-dev libncursesw5-dev libasound2-dev libpulse-dev
-
-sudo apt install build-essential libfftw3-dev libasound2-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev libpipewire-0.3-dev libjack-jackd2-dev pkgconf
-
 # Notes
 plasma-browser-integration - follow steps to change about:preferences in firefox (https://www.reddit.com/r/kde/comments/1te6lk8/the_best_method_to_fix_broken_mpris_thumbnails/)
 
 set up swayidle on startup - https://niri-wm.github.io/niri/Example-systemd-Setup.html
-
-Add *.yuck to "globs"
 
 to make sure firefox deb adheres to system colors: gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 
