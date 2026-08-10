@@ -1,40 +1,37 @@
-/* Pinterest theme credit - based and recoloured from LYRylex (Pinterest Dark Theme Project StayTrue*/
 @import url("colours.css");
 
 * {
     scrollbar-color: var(--accent) transparent !important;
 }
 
-@-moz-document url("about:newtab"), url("about:home") {
-  body {
-    background-color: var(--primary) !important;
-  }
-}
-
 /************              ************
-*************              ************ 
-*************    REDDIT    ************ 
-*************              ************ 
+*************              ************
+*************    REDDIT    ************
+*************              ************
 *************              ***********/
 
 @-moz-document domain("reddit.com") {
 
+	body, * { --color-neutral-border: var(--accent) !important; --color-neutral-background-strong :var(--bright-accent) !important; --color-neutral-background-hover: var(--accent) !important; --button-color-background: var(--bright-accent) !important; --button-color-text:var(--text) !important; --rpl-input-chip-text-color:var(--text) !important; --button-border-color-hover:var(--accent) !important; --color-tone-6:var(--bright-accent) !important; --color-neutral-background-weak: var(--bright-accent) !important; --color-secondary-onBackground: var(--text) !important; }
+
   body, shreddit-post, header, reddit-sidebar-nav, aside, #flex-left-nav-container, .bg-neutral-background, .collapse-container, shreddit-comment[slot-config="light"] .comment-main-grid > #comment-children > .more-comments-link::before, shreddit-comment[slot-config="light"] .comment-main-grid > #comment-children > .more-comments-partial::before, comment-body-header { background-color: var(--primary) !important;, color: black !important; }
-  
-  #mod-recruitment-banner, .bg-neutral-background-selected, li > a:hover, li > div[role="button"]:hover, button:not(.lyt-playbtn):hover, rpl-action-bar a:hover, a[data-post-click-location="repost-button"]:hover { background-color: var(--accent) !important; color:white !important; }
-  
-  .reddit-search-bar, .label-container, .rpl-vote-button-group, .rpl-vote-button-group button, rpl-action-bar a, rpl-dropdown button, button[name="comments-action-button"], a[data-post-click-location="repost-button"], button:not(.lyt-playbtn), pre, code, #search-input-remove-filter { background-color: var(--bright-accent) !important; color: black !important; }
-  
+
+  #mod-recruitment-banner, .bg-neutral-background-selected { background-color: var(--accent) !important; color:white !important; }
+
+  .reddit-search-bar, .label-container, .rpl-vote-button-group, pre, code, #search-input-remove-filter { background-color: var(--bright-accent) !important; }
+
   .text-neutral-content-strong, header button, #reddit-logo svg, .text-category-spoiler { color: black !important; }
-  
+
   .text-neutral-content, .ms-xs, .min-w-0, #innerTextArea { color: var(--weak-text) !important; }
-  
+
   button[aria-label="Give award"],.text-neutral-content-weak, .text-secondary-plain-weak, .text-secondary-weak, .max-h-2xl svg, .max-h-2xl span, .min-h-xl span { color: var(--subtitle) !important; }
-  
-  tr th, li > a:hover span, li > div:hover span, .bg-neutral-background-selected span { color:white !important; }
-  
+
+  li > a:hover span, li > div:hover span, .bg-neutral-background-selected span { color: var(--accent-text) !important; }
+
+  button:not(.lyt-playbtn):hover, rpl-action-bar a:hover, a[data-post-click-location="repost-button"]:hover { color: var(--accent) !important ; }
+
   .post-link { color: #3D426B !important; }
-  
+
   .label-container {
   	border: var(--accent) 1px solid !important;
   }
@@ -42,31 +39,33 @@
 }
 
 /************               ************
-*************               ************ 
-************* YOUTUBE MUSIC ************ 
-*************               ************ 
+*************               ************
+************* YOUTUBE MUSIC ************
+*************               ************
 *************               ***********/
 
 @-moz-document domain("music.youtube.com"){
-  #player-page, #mini-guide-background { background-color: transparent !important;}
-  
-  body, #contents, #header, #sections, .content, #nav-bar-background, ytmusic-nav-bar, ytmusic-guide-renderer { background-color: var(--primary) !important; }
+	body, * { --ytmusic-search-background: var(--bright-accent) !important; --yt-endpoint-color: var(--subtitle) !important; --ytmusic-overlay-text-secondary: var(--subtitle) !important; --paper-listbox-background-color: var(--accent) !important; }
 
-  ytmusic-player-bar, ytmusic-search-box[is-bauhaus-sidenav-enabled][opened] .search-box.ytmusic-search-box, ytmusic-search-suggestions-section, ytmusic-search-box[is-bauhaus-sidenav-enabled] #suggestion-list.ytmusic-search-box, ytmusic-search-suggestion { background-color: var(--accent) !important; }
+	#player-page, #mini-guide-background { background-color: transparent !important;}
+
+	body, #contents, #header, #sections, .content, #nav-bar-background, ytmusic-nav-bar, ytmusic-guide-renderer { background-color: var(--primary) !important; }
+
+	ytmusic-player-bar, ytmusic-search-box[is-bauhaus-sidenav-enabled][opened] .search-box.ytmusic-search-box, ytmusic-search-suggestions-section, ytmusic-search-box[is-bauhaus-sidenav-enabled] #suggestion-list.ytmusic-search-box, ytmusic-search-suggestion { background-color: var(--accent) !important; }
 
   ytmusic-chip-cloud-chip-renderer[chip-style=STYLE_LARGE_TRANSLUCENT_AND_SELECTED_WHITE] a.ytmusic-chip-cloud-chip-renderer, ytmusic-search-box[is-bauhaus-sidenav-enabled]:not([opened]):not([has-query]) .search-box.ytmusic-search-box { background-color: var(--bright-accent) !important; }
 
   ytmusic-search-suggestion:hover, ytmusic-chip-cloud-chip-renderer[chip-style=STYLE_LARGE_TRANSLUCENT_AND_SELECTED_WHITE] a.ytmusic-chip-cloud-chip-renderer:hover { background-color: rgba(255,255,255, 0.2) !important; }
-  
+
   #mini-guide-background { border-right: 1px var(--accent) solid !important; }
 
   #nav-bar-background { border-bottom: 1px var(--accent) solid !important; }
-  
-  .ytmusic-guide-entry-renderer, .tab-content, .song-title, ytmusic-queue-header-renderer .title, .ytmusic-tab-renderer .subtitle, .ytmusic-tab-renderer .title, .ytmusic-shelf .title, .ytmusic-shelf .title a, #contents .title a, button, .ytmusic-chip-cloud-chip-renderer, input.ytmusic-search-box, #contents h1 yt-formatted-string, #contents .strapline yt-formatted-string a { color: black !important; }
 
-  #contents .byline, .ytmusic-inline-badge-renderer, .substring-group > .subtitle > span, .substring-group .subtitle a, .duration, .autoplay .subtitle, .ytmusic-queue-header-renderer .title, .byline.ytmusic-player-queue-item, .subtitle.ytmusic-two-row-item-renderer, .flex-column.ytmusic-responsive-list-item-renderer, .fixed-column.ytmusic-responsive-list-item-renderer, .index.ytmusic-responsive-list-item-renderer, .strapline.ytmusic-carousel-shelf-basic-header-renderer, .ytmusic-responsive-list-item-renderer a.yt-simple-endpoint.yt-formatted-string, #contents .subtitle-wrapper yt-formatted-string, #contents .second-subtitle-container yt-formatted-string, #description-button yt-formatted-string { color: var(--subtitle) !important; } 
+  .ytmusic-guide-entry-renderer, .tab-content, .song-title, ytmusic-queue-header-renderer .title, .ytmusic-tab-renderer .subtitle, .ytmusic-tab-renderer .title, .ytmusic-shelf .title, .ytmusic-shelf .title a, #contents .title a, button, .ytmusic-chip-cloud-chip-renderer, input.ytmusic-search-box, #contents h1 yt-formatted-string, #contents .strapline yt-formatted-string a, .title.ytmusic-two-row-item-renderer, .title.ytmusic-header-renderer { color: black !important; }
 
-  ytmusic-search-box[is-bauhaus-sidenav-enabled][opened] .search-box.ytmusic-search-box #input, ytmusic-search-box[is-bauhaus-sidenav-enabled][opened] .search-box.ytmusic-search-box yt-icon, ytmusic-player-bar button, ytmusic-player-bar a, #suggestions a.yt-simple-endpoint.yt-formatted-string, #suggestions yt-formatted-string, #suggestions yt-icon, #song-media-window yt-icon-button yt-icon, #picture-in-picture { color: white !important; }
+  .ytmusic-inline-badge-renderer span, yt-formatted-string.byline, .duration, .strapline  { color: var(--subtitle) !important; }
+
+  ytmusic-search-box[is-bauhaus-sidenav-enabled][opened] .search-box.ytmusic-search-box #input, ytmusic-search-box[is-bauhaus-sidenav-enabled][opened] .search-box.ytmusic-search-box yt-icon, ytmusic-player-bar button, ytmusic-player-bar a, #suggestions a.yt-simple-endpoint.yt-formatted-string, #suggestions yt-formatted-string, #suggestions yt-icon, #song-media-window yt-icon-button yt-icon, #picture-in-picture, ytmusic-player-bar span, ytmusic-player-bar yt-icon > span svg { color: var(--accent-text) !important; }
 
   ytmusic-search-box[has-query] .search-container.ytmusic-search-box, ytmusic-search-box[opened] .search-container.ytmusic-search-box { box-shadow: none !important; }
 
@@ -74,15 +73,18 @@
 
   .ytSpecButtonShapeNextMono.ytSpecButtonShapeNextOutline, yt-icon-button.ytmusic-carousel-shelf-renderer {
     border:1px solid black !important; }
-  
-  ytmusic-browse-response .background-gradient.ytmusic-browse-response { background-image:none !important; }
+
+  ytmusic-browse-response .background-gradient.ytmusic-browse-response, .gradient-container { background-image:none !important; }
 
   #guide-wrapper { background:none !important; }
 
   .selection-bar.tp-yt-paper-tabs { border-bottom: 2px solid black !important; }
 
   .logo { content: url("https://upload.wikimedia.org/wikipedia/commons/1/1c/YouTube_Music_2024.svg") !important;}
-  
+
+  #button-shape-subscribe > button { background-color:white !important;
+  }
+
   #background picture img { display:none !important; }
   #player {
     border-radius: 16px !important;
@@ -91,17 +93,51 @@
 
 
 /************               ************
-*************               ************ 
-*************   PINTEREST   ************ 
-*************               ************ 
+*************               ************
+*************    YOUTUBE    ************
+*************               ************
+*************               ***********/
+
+@-moz-document domain("youtube.com"){
+
+    body, * { --t3e41d7b17b187f69: var(--primary) !important; --tffc2fd3a644f6275: var(--text) !important; --t4a6da19e16bf221a: var(--subtitle) !important; --icon-color: var(--text) !important; --t7f9b7e1603e20b94: var(--text) !important; }
+
+    body, #container, #chips-wrapper, ytd-mini-guide-renderer, #below { background-color: var(--primary) !important; }
+
+    .ytSearchboxComponentInputBox { background-color: var(--bright-accent) !important; }
+
+    .ytAttributedStringLink, .ytAttributedStringLinkCallToActionColor, .ytAttributedStringLinkInheritColor { color: var(--text) !important; }
+
+}
+
+
+/************               ************
+*************               ************
+*************   PINTEREST   ************
+*************               ************
 *************               ***********/
 
 @-moz-document domain("pinterest.com"){
 
-	body, * { --sema-color-border-decorative: var(--accent) !important ; }
-	
-	body, .ecEhnF, .KvKvqR > div, .gcIrSY  { background-color: var(--primary) !important; }
-	
+	body, * { --sema-color-border-decorative: var(--accent) !important;  }
+
+	body, .ecEhnF, .KvKvqR > div, .gcIrSY, .BVzdUh  { background-color: var(--primary) !important; }
+
 	.Lo7aEl { background-color: var(--bright-accent) !important; }
-	
+
+}
+
+/************                ************
+*************                ************
+*************   DUCKDUCKGO   ************
+*************                ************
+*************                ***********/
+
+
+@-moz-document domain("github.com"){
+
+    body, * { --bgColor-inset: var(--primary) !important; --bgColor-muted: var(--bright-accent) !important; --bgColor-default: var(--bright-accent) !important; --fgColor-default: var(--text) !important; --fgColor-muted: var(--subtitle) !important; --overlay-bgColor: var(--accent) !important; --button-default-bgColor-rest: var(--accent) !important; --button-default-fgColor-rest: var(--accent-text) !important; }
+
+	body { background-color: var(--primary) !important; }
+
 }
