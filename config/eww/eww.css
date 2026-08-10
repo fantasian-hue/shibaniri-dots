@@ -3,108 +3,54 @@
 	font-family:DepartureMono Nerd Font Mono;
 }
 
-.border{
-	border: 5px black solid;
-}
-
-.bold{
-	font-weight:bold;
-}
+.border { border: 5px black solid; } .bold { font-weight:bold; } .padding-left{ padding-left:5px; } .padding-left-25{ padding-left:25px; } .padding-top{ padding-top:10px; } .padding-bottom{ padding-bottom:10px; } .padding-bottom-30{ padding-bottom:30px; }
 
 /******************** Main bar ***********************/
+.ccbg { border-radius:10px; padding-bottom:10px; }
 
-.paint{
-	border-radius: 0px 10px 10px 0px;
-	padding-left:10px;
-	background-color:#ffd48e;
-}
+.paint { border-radius: 0px 10px 10px 0px; }
 
-.paint.dark{
-	background-color:grey;
-}
+.barframe, .barframe-border { border-radius:10px;  }
 
-.barframe, .barframe-border{
-	border-radius:10px;
-}
-
-.barframe.dark {
-	background-color:#625a54;
-	border: 3px solid black;
-}
-
-.barframe.light {
-	background-color:rgba(255,192,103,1.0);
-	border: 3px solid #aa8450;
-	color:black;
-}
-
-.barframe-border.dark {
-	background-color:#625a54;
-	border: 3px solid #86684b;
-}
-
-.barframe-border.light {
-	background-color:rgba(255,192,103,1.0);
-	border: 3px solid #BE5103;
-	color:black;
-}
-
-.info{
-	padding-top:10px;
-}
+.controlcentre-button { padding-top:10px; }
 
 /******************** Control centre ***********************/
 
-.controlcentre{
-	border-radius:10px;
-	border: 3px solid #BE5103;
-	background-color:rgba(255,192,103,1);
-	color:black;
-}
+.controlcentre, .pocky-container { border-radius:10px; margin-top:10px; }
 
-.controlcentre.dark{
-	border: 3px solid #86684b;
-	background-color:rgba(98, 90, 84,1);
-	color:white;
-}
-
-.date {
-	padding-right:10px;
-}
-
-.temperature{
-	padding-bottom:20px;
-}
+.date {	padding-right:10px; }
 
 /******************** Volume ***********************/
 
-.metric slider {
-	color: #ffd5cd;
+.metric slider { color: #ffd5cd; }
+
+.metric scale trough highlight { border-radius: 10px; }
+
+.metric scale trough { border-radius: 10px; min-height: 10px; min-width: 250px; }
+
+.metric { padding-left:5px; }
+
+.volume { padding-top:10px; padding-bottom:10px;
 }
 
-.metric scale trough highlight {
-  background-color: #862801;
-  color: #000000;
-  border-radius: 10px;
-}
+/******************** Processes ***********************/
+.cmd { padding-left:25px; min-width:10px; }
 
-.metric scale trough {
-	border:2px black solid;
-  background-color: #4e4e4e;
-  border-radius: 10px;
-  min-height: 18px;
-  min-width: 250px;
-}
-
-.volume{
-	padding-top:20px;
-	padding-bottom:30px;
-}
-
+.cpu { padding-left:2px; }
 /******************** Theme switcher ***********************/
 
 .theme-ball {
 	padding:10px;
+}
+
+.pocky-container{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.pocky:hover {
+    padding-left:30px;
+    transition:300ms;
 }
 
 /******************** Clock ***********************/
@@ -128,9 +74,6 @@
 
 .player-artist{
 	font-weight:bold;
-}
-
-.player-title{
 }
 
 .player-text{
@@ -157,11 +100,8 @@
 }
 
 .desktop-btn{
-    padding:5px 0px 5px 0px;
+    padding:4px 0px 4px 0px;
 }
-
-
-
 
 /******************** Visualizer ***********************/
 
@@ -170,11 +110,210 @@
 }
 
 .cava-visualizer {
-  font-family: DepartureMono Nerd Font Mono;
-  font-size: 28px;
-  letter-spacing: 2px;
-  color: rgba(255, 125, 37, 0.5);
-  
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/******************** eSports ***********************/
+.league-icon{
+	padding-top:10px;
+	padding-bottom:5px;
+}
+
+/******************** Launcher ***********************/
+
+.searchapps-bar {
+  font-size: 16px;
+  padding: 10px 10px 10px 10px;
+  border-radius:10px 10px 0px 0px;
+}
+
+.search-bar {
+  color: white;
+  caret-color:white;
+}
+
+.search-label {
+  font-size: 16px;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.app-scroll {
+    border-radius:0px 0px 10px 10px;
+}
+
+.app-container {
+  font-size: 16px;
+  border-radius:25px;
+}
+
+.apps {
+    border-radius:25px;
+}
+
+.item {
+    color:black;
+    padding:10px;
+}
+
+/******************** PUDDING ***********************/
+.ccbg.pudding { background-color: #FFC067; border: 3px solid #BE5103;}
+
+.paint.pudding{
+    background-color:#ffd48e;
+}
+
+.barframe.pudding, .barframe-border.pudding {
+	background-color:#FFC067;
+	border: 3px solid #aa8450;
+	color:black;
+}
+
+.barframe-border.pudding {
+	border: 3px solid #BE5103;
+	color:black;
+}
+
+.controlcentre.pudding, .pocky-container.pudding {
+	background-color:#ffd48e;
+	color:black;
+}
+
+.searchapps-bar.pudding {
+    color: black;
+    background-color: #ffd48e;
+    border: 3px solid #862801;
+}
+
+.app-scroll.pudding{
+    background-color:#ffd48e;
+    border:3px #862801 solid;
+    border-top:none;
+}
+
+.metric.pudding scale trough highlight { background-color:rgb(255, 125, 37); border-radius: 10px; }
+
+.metric.pudding scale trough {
+	border:2px #862801 solid;
+	background-color: #ffd48e;
+	border-radius: 10px;
+	min-height: 10px;
+	min-width: 250px;
+}
+
+.cava-visualizer.pudding {
+    color: rgba(255, 125, 37, 0.5);
+}
+
+/******************** SEASALT ***********************/
+.ccbg.seasalt { background-color: #9BC1BC; border: 3px solid #003840;}
+
+.paint.seasalt{
+	background-color:#badbd6;
+}
+
+.barframe.seasalt, .barframe-border.seasalt {
+    background-color:#9BC1BC;
+    border: 3px solid #73938f;
+    color:black;
+}
+
+.barframe-border.seasalt {
+	border: 3px solid #003840;
+}
+
+.controlcentre.seasalt, .pocky-container.seasalt {
+	background-color:#badbd6;
+	color:black;
+}
+
+.searchapps-bar.seasalt {
+    color: white;
+    background-color: #176563;
+    border: 3px solid #003840;
+}
+
+.app-scroll.seasalt{
+    background-color:#9BC1BC;
+    border:3px #003840 solid;
+    border-top:none;
+}
+
+.metric.seasalt scale trough highlight { background-color:#5dffd0; border-radius: 10px; }
+
+.metric.seasalt scale trough {
+	border:2px #003840 solid;
+	background-color: #badbd6;
+	border-radius: 10px;
+	min-height: 10px;
+	min-width: 250px;
+}
+
+.cava-visualizer.seasalt{
+	color: rgba(93, 255, 208, 0.5);
+}
+
+/******************** PANDAN ***********************/
+
+.paint.pandan{
+	background-color:#B0FF9D;
+}
+
+.barframe.pandan, .barframe-border.pandan {
+    background-color:#A8D38D;
+    border: 3px solid black;
+    color:black;
+}
+
+.barframe-border.pandan {
+	border: 3px solid #86684b;
+}
+
+.controlcentre.pandan, .pocky-container.pandan {
+	border: 3px solid #86684b;
+	background-color:#A8D38D;
+	color:black;
+}
+
+.app-scroll.pandan{
+    background-color:#daf7dc;
+    border:3px #01200F solid;
+    border-top:none;
+}
+
+.metric.pandan scale trough highlight { background-color:#1c4800; border-radius: 10px; }
+
+.metric.pandan scale trough {
+	border:2px black solid;
+	background-color: #daf7dc;
+	border-radius: 10px;
+	min-height: 10px;
+	min-width: 250px;
+}
+
+.cava-visualizer.pandan{
+	color: rgba(81, 255, 255, 0.5);
+}
+
+.searchapps-bar.pandan {
+    color: black;
+    background-color: #daf7dc;
+    border: 3px solid #01200F;
+}
+
+
+/******************** DARK ***********************/
+
+.barframe.dark {
+	background-color:#625a54;
+	border: 3px solid black;
+}
+
+.controlcentre.dark {
+	border: 3px solid #86684b;
+	background-color:rgba(98, 90, 84,1);
+	color:white;
 }
 
 .cava-visualizer.dark{

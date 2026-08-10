@@ -1,15 +1,21 @@
-(deflisten theme :initial "light" 'tail -F ~/.config/eww/scripts/theme-state')
-(deflisten music :initial "melo" "scripts/player.sh")
+(deflisten theme :initial "" 'tail -F ~/.config/eww/scripts/theme-state')
+(deflisten music :initial "" "scripts/player.sh")
 (deflisten workspace :initial "null" "scripts/workspace.sh")
 (deflisten volume :initial "0" "scripts/volume.sh")
-(defpoll temperature :interval "1s" "scripts/temperature.sh")
 (deflisten cava :initial "" "scripts/cava.sh")
 (deflisten focused :initial "null" "scripts/focused.sh")
+(deflisten processes :initial "{}" "scripts/processes.sh")
+(deflisten search_listen :initial "{}" 'tail -F ~/.config/eww/scripts/search_items.txt')
+
+(defpoll temperature :interval "1s" "scripts/temperature.sh")
+(defpoll esports :interval "1h" "scripts/esports.sh")
+
 
 ; OPEN BUTTON VARS
 (defvar open_control false)
 (defvar open_powermenu false)
 
+(include "modules/searchapps.yuck")
 (include "modules/bar.yuck")
 (include "modules/control-button.yuck")
 (include "modules/clock.yuck")
