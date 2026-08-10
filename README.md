@@ -15,16 +15,12 @@ sudo apt install alacritty swaybg xdg-desktop-portal-gtk gnome-keyring mako-noti
 
 sudo apt install fastfetch cava feh
 
-
-
 sudo apt install build-essential libfftw3-dev libasound2-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev libpipewire-0.3-dev libjack-jackd2-dev pkgconf
 
 # Xwayland satellite 
 1. git clone https://github.com/Supreeeme/xwayland-satellite
 2. cargo build
 3. then, create a symlink to /usr/local/bin from ~/FOLDER_XWAYLAND_WAS_CLONED_TO/xwayland-satellite/target/debug/xwayland-satellite
-
-
 
 # EWW
 
@@ -118,3 +114,6 @@ xdg-mime default thunar.desktop inode/directory
 # update
 1. .config/alacritty
 2. .config/eww
+3. .config/niri
+4. .config/mozilla
+5. .config/zed
