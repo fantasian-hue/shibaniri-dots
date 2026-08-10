@@ -2,6 +2,10 @@
 My Shiba dots
 Pacstall > Niri 
 
+# fonts
+* DepartureMonoNerdFontMono-Regular
+* Metrophobic (firefox font)
+* MonaS12 - Korean font
 
 # required downloads
 
@@ -110,3 +114,7 @@ xdg-mime default thunar.desktop inode/directory
 3. git clone https://github.com/Fuwn/zed-theme-wal.git ~/.config/zed/wal
 4. download pywal-to-zed.sh and move it to ~/.config/zed/wal
 5. chmod +x ~/.config/zed/wal/pywal-to-zed.sh
+
+# update
+1. .config/alacritty
+2. .config/eww
