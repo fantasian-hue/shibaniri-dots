@@ -1,0 +1,10 @@
+[Unit]
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/swayidle -w timeout 1800 'systemctl suspend' before-sleep 'gtklock -d -M DP-6'
+Restart=on-failure
+
+#ExecStart=/usr/bin/swayidle -w timeout 1800 'systemctl suspend'  timeout 550 'gtklock -d -M DP-6' before-sleep 'gtklock -d -M DP-6'
