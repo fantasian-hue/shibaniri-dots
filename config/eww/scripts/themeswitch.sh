@@ -1,33 +1,49 @@
 #!/bin/bash
 
-STATE="$HOME/.config/eww/scripts/theme-state"
-CURRENT=$(cat "$STATE" 2>/dev/null || echo "light")
+current_theme=$(cat "$HOME/.config/eww/scripts/theme-state")
+new_theme=$(echo "$1")
 
-if [ "$CURRENT" = "light" ]; then
-    NEW="dark"
+if [ "$current_theme" = "$1" ]; then
+    exit 0
 else
-    NEW="light"
+    echo "$new_theme" > "$HOME/.config/eww/scripts/theme-state"
+    if [ "$new_theme" = "seasalt" ]; then
+        cp ~/.config/mozilla/firefox/c4iv4shh.default-release/chrome/seasalt.css ~/.config/mozilla/firefox/c4iv4shh.default-release/chrome/colours.css &
+        cp ~/.config/gtk-4.0/seasalt.css ~/.config/gtk-4.0/colors.css &
+        gsettings set org.gnome.desktop.interface gtk-theme 'seasalt' &
+        gsettings set org.gnome.desktop.interface icon-theme 'adwaita' &
+        pkill swaybg; swaybg -i /home/quokka/Documents/blue.png -m fill &
+        cp ~/.cache/wal/seasalt.json ~/.cache/wal/colors.json &
+        pywalfox update & ~/.config/zed/wal/pywal-to-zed.sh & theme-sync-update &
+        cp ~/.config/alacritty/colors/seasalt.toml ~/.config/alacritty/colors.toml &
+        cp ~/.config/niri/colours/seasalt.kdl ~/.config/niri/colors.kdl &
+        eww update theme=seasalt &
+        exit 0
+    elif [ "$new_theme" = "pudding" ]; then
+        cp ~/.config/mozilla/firefox/c4iv4shh.default-release/chrome/pudding.css ~/.config/mozilla/firefox/c4iv4shh.default-release/chrome/colours.css &
+        cp ~/.config/gtk-4.0/pudding.css ~/.config/gtk-4.0/colors.css &
+        gsettings set org.gnome.desktop.interface gtk-theme 'pudding' &
+        gsettings set org.gnome.desktop.interface icon-theme 'pudding' &
+        pkill swaybg; swaybg -i /home/quokka/Documents/bg-tile.png -m fill &
+        cp ~/.cache/wal/pudding.json ~/.cache/wal/colors.json &
+        pywalfox update & ~/.config/zed/wal/pywal-to-zed.sh & theme-sync-update &
+        cp ~/.config/alacritty/colors/pudding.toml ~/.config/alacritty/colors.toml &
+        cp ~/.config/niri/colours/pudding.kdl ~/.config/niri/colors.kdl &
+        eww update theme=pudding &
+        exit 0
+    elif [ "$new_theme" = "pandan" ]; then
+        cp ~/.config/mozilla/firefox/c4iv4shh.default-release/chrome/pudding.css ~/.config/mozilla/firefox/c4iv4shh.default-release/chrome/colours.css &
+        cp ~/.config/gtk-4.0/pudding.css ~/.config/gtk-4.0/colors.css &
+        gsettings set org.gnome.desktop.interface gtk-theme 'pudding' &
+        gsettings set org.gnome.desktop.interface icon-theme 'pudding' &
+        pkill swaybg; swaybg -i /home/quokka/Documents/bg-tile.png -m fill &
+        cp ~/.cache/wal/pandan.json ~/.cache/wal/colors.json &
+        pywalfox update & ~/.config/zed/wal/pywal-to-zed.sh & theme-sync-update &
+        cp ~/.config/alacritty/colors/pandan.toml ~/.config/alacritty/colors.toml &
+        cp ~/.config/niri/colours/light.kdl ~/.config/niri/colors.kdl &
+        eww update theme=pandan &
+        exit 0
+    else
+        exit 0
+    fi
 fi
-
-if [ "$NEW" = "light" ]; then
-    dconf write /org/xfce/mousepad/preferences/view/color-scheme "'pudding'"
-    gsettings set org.gnome.desktop.interface gtk-theme 'pudding'
-    pkill swaybg; swaybg -i /home/quokka/Downloads/bg.png -m fill &
-    cp ~/.config/alacritty/colors/"$NEW".toml \
-   ~/.config/alacritty/colors.toml
-    alacritty msg config "$(cat ~/.config/alacritty/colors.toml)"
-    niri msg action load-config-file --path ~/.config/niri/config.kdl
-
-else
-    dconf write /org/xfce/mousepad/preferences/view/color-scheme "'pudding-dark'"
-    gsettings set org.gnome.desktop.interface gtk-theme 'pudding-dark'
-    pkill swaybg; swaybg -i /home/quokka/Downloads/bg2.png -m fill &
-    cp ~/.config/alacritty/colors/"$NEW".toml \
-   ~/.config/alacritty/colors.toml
-    alacritty msg config "$(cat ~/.config/alacritty/colors.toml)"
-    niri msg action load-config-file --path ~/.config/niri/dark.kdl
-fi
-
-echo "$NEW" > "$STATE"
-printf "$NEW"
-eww update theme="$NEW"

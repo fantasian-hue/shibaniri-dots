@@ -1,0 +1,1 @@
+(box :orientation "v" :width 300 :class "apps"  (button :class { "item " + theme } :halign "start"  :onclick " gtk-launch steam.desktop &" "steam"))

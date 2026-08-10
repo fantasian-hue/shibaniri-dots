@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #taken and edited from abod8639 github for eww music widget
+#raw output gets turned into numbers, numbers then get assigned an ascii block, the higher the number the taller the block
 
 cava -p <(cat <<EOF
 [general]

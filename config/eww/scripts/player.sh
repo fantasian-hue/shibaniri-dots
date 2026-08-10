@@ -1,5 +1,6 @@
 #!/bin/bash
 #based off linkfrg mpris.sh
+#get data from plasma-browser-integration
 
 PLAYER="plasma-browser-integration"
 echo {\"title\": \"\", \"artist\":\"\"}
