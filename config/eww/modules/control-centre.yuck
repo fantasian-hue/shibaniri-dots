@@ -1,24 +1,58 @@
-(defwindow control-centre
-	:monitor 1 :stacking "ov" :focusable "ondemand" :geometry (geometry :x "65" :y "10") :namespace "eww-centre"
+(defwindow cc-bg
+    :monitor 1 :namespace "eww-bar" :stacking "fg" :focusable "ondemand" :geometry (geometry :x "65" :y "10")
     (revealer :transition "slideright" :reveal {open_control} :duration "300ms"
-    		(centerbox :height 140 :width 400 :class {"controlcentre " + theme} :orientation "v"
+        (box :width 320 :class {"ccbg " + theme } :space-evenly false :orientation "v"
+            (box :valign "start" :halign "center"
+                (control-centre))
+            (box :valign "center" :halign "center"
+                (esports-widget))
+            (box :valign "end" :halign "center" (theme-widget))
+        ))
+    )
+
+(defwidget control-centre[]
+    		(box :height 140 :width 300 :class {"controlcentre " + theme} :orientation "v" :space-evenly false
     			(box :valign "start"
-    			(box :halign "start"
-    				(theme )
+    				(box :halign "start"
+    					(theme)
     				)
-    				(box :halign "center"
-    				(label :text ""))
     				(box :halign "end"
-    				(label :class "date" :text {formattime(EWW_TIME, "%a, %b %d")})
+    					(label :class "date" :text {formattime(EWW_TIME, "%a, %b %d")})
     				))
-    			(box :valign "center" :space-evenly false :orientation "v"
-    				(box
-    					(volume))
-    				(box :class "temperature"
-    					(label :class "bold" :text "CPU Temp")
-    					(label :text "${temperature}"))
+    				(box :valign "center" :space-evenly false :orientation "v"
+    					(label :class "bold padding-left" :halign "start" :text "Sound")
+    						(box
+    							(volume)
+    						)
+    					(label :class "bold padding-left" :halign "start" :text "Systems")
+    						(box :class "padding-bottom padding-top"
+    							(label :text "Temperature")
+    							(label :text "${temperature}"))
+    						(box (label :class "bold padding-left-25" :halign "start" :text "CMD") (label :class "bold" :text "CPU"))
+    						(box :height 100
+                                    (label :halign "start" :class "cmd" :text {processes.cmd} :limit-width 10)
+                                    (label :class "cpu" :text {processes.cpu})
+    						)
     				)
     				(box :valign "end" :halign "end"
     					(powermenu-button)))
-    )
+
+)
+
+(defwidget esports-widget []
+        (box :orientation "v"  :class {"controlcentre " + theme} :height 120 :width 300 :space-evenly false
+        (box :class "league-icon"
+            (image :path "./assets/league.png"))
+            (scroll :vscroll true :height 60
+                (box :orientation "h" :class "league-widget" :valign "start"
+                    (label :text {esports.title=="" ? "No games" : esports.title})
+    				(label :text {esports.time==""? "" : esports.time})))
+))
+
+(defwidget theme-widget []
+    (box :orientation "v" :class { "pocky-container " + theme }  :space-evenly false :width 300
+        (button :class "pocky" :onclick "~/.config/eww/scripts/themeswitch.sh seasalt" (image :path "/home/quokka/Documents/seasalt.png" :image-width 250))
+        (button :class "pocky" :onclick "~/.config/eww/scripts/themeswitch.sh pudding" (image :path "/home/quokka/Documents/pudding.png" :image-width 250))
+        )
+
 )

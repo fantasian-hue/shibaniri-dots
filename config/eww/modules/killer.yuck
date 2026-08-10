@@ -13,5 +13,5 @@
 )
 
 (defwidget killer[]
-	(eventbox :onclick {"eww update open_control=false && eww update open_powermenu=false"})
+	(eventbox :onclick {"eww update open_control=false && eww update open_powermenu=false && eww close searchapps"})
 )

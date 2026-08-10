@@ -12,14 +12,14 @@
         	(box :orientation "vertical" :space-evenly false
         		(box :class "prevnext"
         			(eventbox :onclick "playerctl -p plasma-browser-integration previous" :cursor "pointer"
-        				(image :path {theme == "light" 
+        				(image :path {theme == "pudding" || theme == "seasalt"
         					? "./assets/shiba-prev.png"
         					: "./assets/shibad-prev.png"}
         					:image-width 18 :image-height 18))
         	)
         	(box :class "playpause"
         		(eventbox :onclick "playerctl -p plasma-browser-integration play-pause" :cursor "pointer"
-        			(image :path {theme == "light"
+        			(image :path {theme == "pudding" || theme == "seasalt"
         				? (music.status == "Playing"
         					? "./assets/shiba-pause.png"
         					: "./assets/shiba-play.png")
@@ -30,7 +30,7 @@
         	)
         	(box :class "prevnext"
         		(eventbox :onclick "playerctl -p plasma-browser-integration next" :cursor "pointer"
-        			(image :path {theme == "light"
+        			(image :path {theme == "pudding" || theme == "seasalt"
         				? "./assets/shiba-next.png"
         				: "./assets/shibad-next.png"}
         			:image-width 18 :image-height 18)))
@@ -38,4 +38,3 @@
         )
     )
 )
-

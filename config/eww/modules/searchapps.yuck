@@ -1,0 +1,19 @@
+;;;; taken from isparsh and modified
+
+(defwidget searchapps []
+  (box
+    (box :orientation "v" :space-evenly false :class "search-win"
+      (box :orientation "h" :space-evenly false :class { "searchapps-bar " + theme }
+        (label :class "search-label" :text "")
+        (input :class "search-bar" :onchange "~/.config/eww/scripts/search.sh {}"))
+      (scroll :vscroll true :height 300 :width 300 :class { "app-scroll " + theme }
+          (literal :class "app-container" :content search_listen)))))
+
+(defwindow searchapps
+  :wm-ignore: true
+  :monitor 1
+  :focusable "ondemand"
+  :stacking "fg"
+  :geometry (geometry :x 835
+                      :y 720)
+(searchapps))

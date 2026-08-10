@@ -1,18 +1,24 @@
 (defwidget volume []
-	(centerbox :class "volume"
+	(box :class "volume" :space-evenly false
 	(eventbox :cursor "pointer" :onclick "pamixer -t"
 		(image
-		:image-width 18
+		:image-width 18 :class "padding-left"
 		:path {volume == "0" || volume == "muted"
 			? "/home/quokka/.config/eww/assets/shiba-mute.png"
 			: "/home/quokka/.config/eww/assets/shiba-audio.png" }))
 		(metric)
-		(label :text "${volume}"))
+		;(label :text "${volume}")
+		)
 )
 
 (defwidget metric []
-	(box :class "metric"
+    (box :class {"metric " + theme }
 	(scale :min 0 :max 101 :value {volume == "muted" ? 0 : volume} :onchange {volume == "muted" ? "pamixer -u && pamixer --set-volume {} && pamixer --set-volume {}" : "pamixer --set-volume {}"}))
 )
 
-
+(defwindow volume_slider
+	:monitor 1 :stacking "ov" :geometry (geometry :x "40" :y "920")
+	(box :class {"controlcentre " + theme}
+		(metric)
+	)
+)
