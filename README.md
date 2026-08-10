@@ -1,6 +1,5 @@
 # shibaniri-dots
-My Shiba dots
-Pacstall > Niri 
+my dots
 
 # fonts
 * DepartureMonoNerdFontMono-Regular
@@ -119,3 +118,4 @@ xdg-mime default thunar.desktop inode/directory
 5. .config/niri
 6. .config/zed
 7. .themes/pudding && .themes/seasalt
+8. .cache/wal
